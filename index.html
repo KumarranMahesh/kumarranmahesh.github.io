@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumarran Mahesh - AI & Data Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">// Kumarran Mahesh</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#home">/home</a></li>
+                <li><a href="#personal-info">/info</a></li>
+                <li><a href="#skills">/skills</a></li>
+                <li><a href="#volunteering">/volunteering</a></li>
+                <li><a href="#experience">/projects</a></li>
+                <li><a href="#contact">/contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon" id="theme-icon">🌙</span>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home">/home</a>
+        <a href="#personal-info">/info</a>
+        <a href="#skills">/skills</a>
+        <a href="#volunteering">/activities</a>
+        <a href="#experience">/projects</a>
+        <a href="#resume">/resume</a>
+        <a href="#contact">/contact</a>
+    </div>
+
+    <section class="hero" id="home">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="typing-text" id="typing-text">Hi, I'm Kumarran!</h1>
+            <p class="subtitle">
+                An AI & Data Science student with a passion for building intelligent systems.
+            </p>
+            <div class="cta-buttons">
+                <a href="#experience" class="btn btn-primary">Explore Projects</a>
+                <a href="resume.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal-info" class="fade-in">
+        <h2 class="section-title" data-section-number="01">Personal Information</h2>
+        <div class="personal-card">
+            <div class="personal-details">
+                <h3>Kumarran Mahesh</h3>
+                <p>An aspiring Data Scientist and Machine Learning Engineer based in Sri City, India. I am dedicated to leveraging data to solve complex problems and create meaningful impact.</p>
+                <div class="personal-links">
+                    <a href="mailto:maheshkumarran19@gmail.com">maheshkumarran19@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/kumarranmahesh" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/KumarranMahesh" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="personal-photo">
+                <img src="photo.jpg" alt="Kumarran Mahesh" />
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="fade-in">
+        <h2 class="section-title" data-section-number="02">Education</h2>
+        <div class="education-card">
+            <h3>B.Tech, Artificial Intelligence & Data Science</h3>
+            <p class="institution">Indian Institute of Information Technology (IIIT), Sri City</p>
+            <p class="date">2023 – 2027</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="fade-in">
+        <h2 class="section-title" data-section-number="03">Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>// Languages</h3>
+                <p>Python, Rust, SQL, C++</p>
+            </div>
+            <div class="skill-category">
+                <h3>// ML & Data</h3>
+                <p>TensorFlow, Scikit-Learn, Pandas, Keras, NumPy</p>
+            </div>
+            <div class="skill-category">
+                <h3>// Visualization</h3>
+                <p>Matplotlib, Seaborn, Power BI, Tableau</p>
+            </div>
+            <div class="skill-category">
+                <h3>// Tools</h3>
+                <p>Jupyter, Google Colab, Git, Streamlit, Docker</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering" class="fade-in">
+        <h2 class="section-title" data-section-number="04">Volunteering</h2>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <h3>Club Lead</h3>
+                <p class="organization">IOTA Projects Club (IIIT Sri City)</p>
+            </div>
+            <div class="activity-card">
+                <h3>Ex-Club Member</h3>
+                <p class="organization">Photography Club (IIIT Sri City)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="fade-in">
+        <h2 class="section-title" data-section-number="05">Featured Projects</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/KumarranMahesh/Customer-Segmentation" target="_blank" class="project-card">
+                <div class="project-number">Project 01</div>
+                <h3>Customer Segmentation</h3>
+                <p>Segmented customers using K-Means clustering for targeted marketing, performing extensive EDA and data cleaning.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>Scikit-Learn</span><span>Pandas</span>
+                </div>
+            </a>
+            <a href="https://github.com/KumarranMahesh/Crop-Recommendation-System" target="_blank" class="project-card">
+                <div class="project-number">Project 02</div>
+                <h3>Crop Recommendation System</h3>
+                <p>Built a system to recommend crops using Random Forest and Gradient Boosting, achieving over 95% prediction accuracy.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>Machine Learning</span><span>Streamlit</span>
+                </div>
+            </a>
+            <a href="https://github.com/KumarranMahesh/voice-assistant" target="_blank" class="project-card">
+                <div class="project-number">Project 03</div>
+                <h3>Virtual Desktop Assistant</h3>
+                <p>Developed a voice-controlled assistant integrating speech recognition and text-to-speech for hands-free operation.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>SpeechRecognition</span><span>APIs</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="resume" class="fade-in">
+        <h2 class="section-title" data-section-number="06">Resume</h2>
+        <div class="cta-buttons" style="justify-content: center;">
+            <a href="https://drive.google.com/file/d/11rk61h6KzcH4dfS4mmoJuEqNcXe-gO8q/view?usp=sharing" class="btn btn-primary" target="_blank">View My Resume</a>
+        </div>
+    </section>
+    
+    <section id="contact" class="fade-in">
+        <h2 class="section-title" data-section-number="07">Get In Touch</h2>
+        <div class="contact-content">
+            <p>I'm currently available for freelance projects and internship opportunities. Have a project in mind? Let's talk.</p>
+            <a href="mailto:maheshkumarran19@gmail.com" class="btn btn-primary email-link">maheshkumarran19@gmail.com</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed & Built by Kumarran Mahesh &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
