@@ -4,7 +4,7 @@
     --font-body: 'Inter', sans-serif;
     
     /* Dark Theme (Default) */
-    --primary-bg: #1D2028;
+    --primary-bg: #18191cff;
     --secondary-bg: #282C34;
     --text-primary: #E2E8F0;
     --text-secondary: #A0AEC0;
@@ -18,8 +18,8 @@
     --secondary-bg: #FFFFFF;
     --text-primary: #2D3748;
     --text-secondary: #718096;
-    --accent: #FF4500;
-    --accent-dark: #cc3700;
+    --accent: #33FF99;
+    --accent-dark: #29cc7a;
     --border-color: rgba(45, 55, 72, 0.2);
 }
 
@@ -81,7 +81,7 @@ body:hover .cursor-dot, body:hover .cursor-outline {
     background-color: rgba(51, 255, 153, 0.2);
 }
 [data-theme="light"] .cursor-outline.hover {
-     background-color: rgba(255, 69, 0, 0.2);
+    background-color: rgba(255, 69, 0, 0.2);
 }
 
 
