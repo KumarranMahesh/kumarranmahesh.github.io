@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #00e861;
+    --color-background-light: #f4f4f0;
+    --color-background-dark: #0a0a0a;
+    --color-border-color: #000000;
+    --color-border-dark: #ffffff;
+
+    --font-display: "Space Grotesk", sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+
+    --shadow-brutal: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-brutal-dark: 4px 4px 0px 0px rgba(255, 255, 255, 1);
+    --shadow-brutal-sm: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-brutal-sm-dark: 2px 2px 0px 0px rgba(255, 255, 255, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.mono-text {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+/* Brutal button press effect */
+.brutal-btn {
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+.brutal-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1) !important;
+}
+.dark .brutal-btn:active {
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 1) !important;
+}
+
+/* Hamburger animation */
+.hamburger-bar {
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+.hamburger-active .hamburger-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger-active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-active .hamburger-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile nav slide transition */
+.mobile-nav-enter {
+    transform: translateX(100%);
+}
+.mobile-nav-active {
+    transform: translateX(0);
+}
+
+/* Fade-in on scroll */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
