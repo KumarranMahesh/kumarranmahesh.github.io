@@ -33,18 +33,18 @@ const SOCIALS = [
 export default function Footer() {
     return (
         <footer
-            className="bg-background-light dark:bg-background-dark pt-32 pb-12 px-6 border-t-4 border-black dark:border-white scroll-mt-20"
+            className="bg-background-light dark:bg-background-dark pt-16 md:pt-32 pb-8 md:pb-12 px-4 md:px-6 border-t-4 border-black dark:border-white scroll-mt-20"
             id="contact"
         >
             <div className="max-w-7xl mx-auto">
                 <a
                     href="mailto:kumarranatwork@gmail.com"
-                    className="text-7xl md:text-9xl font-black uppercase mb-12 hover:text-primary transition-colors cursor-pointer inline-block no-underline text-inherit"
+                    className="text-4xl sm:text-5xl md:text-9xl font-black uppercase mb-8 md:mb-12 hover:text-primary transition-colors cursor-pointer inline-block no-underline text-inherit leading-tight"
                 >
                     Let&apos;s Talk.
                 </a>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t-4 border-black dark:border-white pt-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 border-t-4 border-black dark:border-white pt-8 md:pt-12">
                     <div>
                         <h3 className="text-xl font-bold mb-4 uppercase">
                             Contact
@@ -81,7 +81,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-24 pt-6 border-t-2 border-black dark:border-white flex flex-col md:flex-row justify-between items-center gap-4 mono-text text-sm">
+                <div className="mt-12 md:mt-24 pt-6 border-t-2 border-black dark:border-white flex flex-col md:flex-row justify-between items-center gap-4 mono-text text-sm">
                     <p>&copy; {new Date().getFullYear()} Kumarran Mahesh.</p>
                     <p>Designed with intention.</p>
                 </div>

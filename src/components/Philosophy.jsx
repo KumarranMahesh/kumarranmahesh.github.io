@@ -11,12 +11,12 @@ const TECH_STACK = [
 export default function Philosophy() {
     return (
         <section className="scroll-mt-32" id="philosophy">
-            <h2 className="text-3xl font-bold mb-8 uppercase tracking-widest border-b-4 border-black dark:border-white pb-4 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 uppercase tracking-widest border-b-4 border-black dark:border-white pb-3 md:pb-4 inline-block">
                 Philosophy
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
                 {/* Systems-First Approach - spans 2 columns */}
-                <div className="md:col-span-2 border-4 border-black dark:border-white p-8 bg-white dark:bg-gray-900 shadow-brutal dark:shadow-brutal-dark">
+                <div className="md:col-span-2 border-4 border-black dark:border-white p-5 md:p-8 bg-white dark:bg-gray-900 shadow-brutal dark:shadow-brutal-dark">
                     <div className="mb-6 border-b-4 border-black dark:border-white pb-4 inline-block">
                         <span className="material-symbols-outlined text-4xl text-primary">
                             hub
@@ -34,7 +34,7 @@ export default function Philosophy() {
                 </div>
 
                 {/* Engineering Leadership */}
-                <div className="border-4 border-black dark:border-white p-8 bg-white dark:bg-gray-900 shadow-brutal dark:shadow-brutal-dark flex flex-col justify-between">
+                <div className="border-4 border-black dark:border-white p-5 md:p-8 bg-white dark:bg-gray-900 shadow-brutal dark:shadow-brutal-dark flex flex-col justify-between">
                     <div className="mb-6 border-b-4 border-black dark:border-white pb-4 inline-block">
                         <span className="material-symbols-outlined text-4xl text-primary">
                             groups
@@ -55,7 +55,7 @@ export default function Philosophy() {
                 </div>
 
                 {/* Core Stack - full width, inverted colors */}
-                <div className="md:col-span-3 border-4 border-black dark:border-white p-8 bg-black text-white dark:bg-white dark:text-black shadow-brutal dark:shadow-brutal-dark">
+                <div className="md:col-span-3 border-4 border-black dark:border-white p-5 md:p-8 bg-black text-white dark:bg-white dark:text-black shadow-brutal dark:shadow-brutal-dark">
                     <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
                         <div className="md:w-1/3">
                             <h3 className="text-2xl font-bold mb-2">

@@ -27,8 +27,8 @@ function App() {
     return (
         <div className="bg-background-light dark:bg-background-dark text-black dark:text-white min-h-screen flex flex-col">
             <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-            <main className="flex-grow pt-32 pb-24 px-6">
-                <div className="max-w-7xl mx-auto space-y-32">
+            <main className="flex-grow pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-6">
+                <div className="max-w-7xl mx-auto space-y-16 md:space-y-32">
                     <Hero />
                     <Philosophy />
                     <Work />
