@@ -11,7 +11,7 @@ export default function Hero() {
             </p>
             <a
                 className="brutal-btn inline-block bg-primary text-black font-bold py-3 px-6 md:py-4 md:px-8 text-base md:text-lg border-4 border-black dark:border-white shadow-brutal dark:shadow-brutal-dark hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
-                href="https://drive.google.com/file/d/1Wp5hacql9KiXy4SJK17bVrEVJQVxca2b/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lkg6TBcwcHeSaXsW6C4P3AkH__z_tu9n/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
             >
